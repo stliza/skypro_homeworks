@@ -1,10 +1,9 @@
-def is_year_leap ():
-    year = input ("Введите год: ")
-    year = int(year)
-
+def is_year_leap (year):
     if (year % 4 == 0):
-        print ("год ", year,":", True)
+        return True
     else:
-        print ("год ", year, ":", False)
+        return False
 
-is_year_leap()
+check_year = 2011
+result = is_year_leap(check_year)
+print("год " + str(check_year) + ": " + str(result))
