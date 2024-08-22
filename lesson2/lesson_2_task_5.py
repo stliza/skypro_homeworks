@@ -1,13 +1,13 @@
 def month_to_season(n):
-    if (n != 0 and n <= 2 or n == 12):
-        print("Зима")
-    elif (n > 2 and n < 6):
-        print("Весна")
-    elif (n > 5 and n < 9):
-        print("Лето")
-    elif (n >= 10 and n < 12):
-        print("Осень")
+    if (n == 1 and n == 2 or n == 12):
+        return "Зима"
+    elif (n >= 3 and n <= 5):
+        return "Весна"
+    elif (n >= 6 and n <= 8):
+        return "Лето"
+    elif (n >= 9 and n <= 11):
+        return "Осень"
     else:
-        print("Такого месяца не существует")
+        return "Такого месяца не существует"
 
-month_to_season(0)
+print(month_to_season(int(input("Введите номер месяца: "))))

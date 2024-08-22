@@ -1,4 +1,7 @@
+import math
 def square(a):
     b = a * a
-    return b
-print(square (int(8.31)))
+    return math.ceil(b)
+
+a = float(input("Введите сторону квадрата: "))
+print(square (a))

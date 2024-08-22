@@ -9,5 +9,5 @@ def fizz_buzz(n):
         else:
             print(n)
 
-n = 17
-fizz_buzz(n)
+
+fizz_buzz(int(input("Введите число: ")))
