@@ -1,0 +1,27 @@
+Ошибка функции contains при поиски в текте пустого значения при прохождения теста
+
+Шаги:
+1. Вызвать функцию contains, заполнив ее следующими значениями:
+string - "eva" symbol - ""
+
+ОР: функция отработает и выдаст значение False
+ФР: функция выдает результат True
+
+Приоритет: низкий
+Серьезность: S4
+
+Описани ошибки:
+
+string = 'eva', symbol = '', result = False
+
+    @pytest.mark.parametrize('string, symbol, result', [
+        ("eva", "e", True), ("eva", "s", False),
+        ("", "", True), ("eva", "", False)
+        ])
+    def test_contains(string, symbol, result):
+        stringUtils = StringUtils()
+        res = stringUtils.contains(string, symbol)
+>       assert res == result
+E       assert True == False
+
+lesson4\test_string_utils.py:42: AssertionError
