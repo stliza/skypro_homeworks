@@ -1,5 +1,5 @@
 Локатор логотипа (html-елемент, содержащий в
-себе значок и слово "авиасейлс") - $$( ".s__IfjHnfURFBTIihipyW2z" )
+себе значок и слово "авиасейлс") - $$ ( '[data-test-id="logo-text"]' )
 Локатор поля Откуда - $$ ( "#avia_form_origin-input" )
 Локатор поля Куда - $$ ( "#avia_form_destination-input" )
 Локатор поля Когда - $$ ( '[data-test-id="start-date-field"]' )
