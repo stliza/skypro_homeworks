@@ -6,7 +6,7 @@ from time import sleep
 for i in range(3):
     driver = webdriver.Chrome()
     driver.get("http://uitestingplayground.com/classattr")
-    sleep(10)
+    sleep(2)
     button = driver.find_element(By.CSS_SELECTOR, ".btn-primary").send_keys(Keys.RETURN)
 
 driver.quit()
