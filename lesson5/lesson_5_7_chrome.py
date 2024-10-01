@@ -9,7 +9,7 @@ search_input.send_keys("1000")
 
 sleep(5)
 
-search_input.clear
+search_input.clear()
 search_input.send_keys("999")
 
 sleep(5)
